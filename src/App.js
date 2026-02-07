@@ -1,5 +1,5 @@
 import './App.css';
-import TodayPokemon from './components/TodayPokemon';
+import TodayPokemon from './components/TodayPokemon/TodayPokemon';
 
 function App() {
   return (
