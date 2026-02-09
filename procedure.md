@@ -64,3 +64,45 @@ Pokémon API에서 아이템 정보...를 불러오면 좋아보이긴하는데 
 # API 구현
 1. 1차적으로 API를 불러온 뒤
 2. KO 처리를 하고 데이터 전부를 자식에게 props로 상속한다.
+
+# Local Storage 
+## 오늘 출석 여부
+dailyCheck
+- 오늘 날짜 - date
+- 연속 출석 기준 - stack
+
+## 포켓몬 뽑았는지 여부
+todaysPokemon
+- 오늘 날짜 - date
+- 뽑은 포켓몬 No - pokeNo
+- 포획 여부 - gacha
+
+## Inventory
+myInventory
+- 아이템 index- itemIndex
+- 아이템 종류(No)-  itemNo
+- 아이템 갯수- itemStock
+- 아이템 종류(볼 체크용)- itemType
+- 아이템 언제 뽑았나(럭키 전용)- getTime
+- 어느 포켓몬이 나왔나- pokeNo
+
+아이템을 Ball/LuckyItem 두갠데 아예 스토리지를 가를지
+
+Inventory에 둘다 뽑아야 하니 둘지 고민임 
+
+### Ball
+- 포획 가능 여부를 Ball체크에만 넣어둬야함(아니면 럭키아이템이 출력될 수 있음!)
+- type:ball
+
+
+### LuckyItem
+- 언제 뽑았는지 어느 포켓몬에서 나왔는지..를 넣고싶다
+- type:item
+
+## Pokemon(BOX)
+myBox
+- 포켓몬 index - pokeIndex
+- 포켓몬 No - pokeNo
+- 포켓몬 성격 - pokePersonality
+- 가지고 있는 아이템 - itemNo
+- 언제 포획했는지 - gachaTime

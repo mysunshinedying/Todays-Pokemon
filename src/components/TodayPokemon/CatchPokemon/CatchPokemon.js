@@ -2,6 +2,7 @@ import React from 'react';
 import {useState} from 'react';
 
 const CatchPokemon = (props) => {
+    const today = new Date().toISOString().slice(0, 10);
     const [monsterBall, setBall] = useState(10);
     const catchMonster  = () => {
         if(monsterBall < 1) {
@@ -11,6 +12,12 @@ const CatchPokemon = (props) => {
         }
         setBall(monsterBall - 1);
         if(Math.random() * 100 < 50) {
+            localStorage.setItem('todaysPokemon', JSON.stringify({
+                date: today,
+                pokemonNo: props.pokemon.pokemonNo,
+                pokemonPersonal: props.pokemon.pokemonPersonal,
+                gacha: 1
+            }));
             {props.onResult()}
         } else {
             console.log("포획 실패");

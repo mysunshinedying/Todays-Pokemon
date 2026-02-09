@@ -18,13 +18,22 @@ const CatchResult = (props) => {
                     itemSprite: itemData.sprites?.default,
                     itemDesc: descriptKo ? descriptKo.text : itemData.text
                 });
-                console.log(itemNo);
+
             });
     }, []);
 
+    function eulReul(noun) {
+        const last = noun.charCodeAt(noun.length - 1);
+        if (last < 0xac00 || last > 0xd7a3) return `${noun}를`;
+
+        const jong = (last - 0xac00) % 28;
+        const josa = jong === 0 ? '를' : '을';
+        return `${noun}${josa}`;
+    }
+
     return (
         <div>
-            {props.pokemon.nameKo}를 잡았다!<br/>
+            {eulReul(props.pokemon.nameKo)} 잡았다!<br/>
             박스에 등록됩니다...
             <p>가지고 있는 아이템: {item && item.itemNameKo} {item && <img src={item.itemSprite}/>} {item && item.itemDesc}</p>
         </div>

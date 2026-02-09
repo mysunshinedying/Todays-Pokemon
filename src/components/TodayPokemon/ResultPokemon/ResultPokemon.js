@@ -1,7 +1,10 @@
 import React from 'react';
+import {useEffect} from 'react';
+
 import PokemonDetail from "../../PokemonDetail/PokemonDetail";
 
 const ResultPokemon = (props) => {
+
     return (
         <div>
             <PokemonDetail pokemon={props.pokemon}/>
