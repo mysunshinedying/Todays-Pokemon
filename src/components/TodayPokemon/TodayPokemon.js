@@ -8,14 +8,25 @@ import CatchResult from './CatchPokemon/CatchResult';
 import fetchPokemon from '../API/pokeAPI';
 
 
-const today = new Date().toISOString().slice(0, 10);
+const today = [
+    new Date().getFullYear(),
+    String(new Date().getMonth() + 1).padStart(2, '0'),
+    String(new Date().getDate()).padStart(2, '0')
+].join('-');
 const yesterday = new Date();
 yesterday.setDate(yesterday.getDate() - 1);
-const yesterdayStr = yesterday.toISOString().slice(0, 10);
+const yesterdayStr = [
+    yesterday.getFullYear(),
+    String(yesterday.getMonth() + 1).padStart(2, '0'),
+    String(yesterday.getDate()).padStart(2, '0')
+].join('-');
 
 const dailyData = JSON.parse(localStorage.getItem('dailyCheck')) ?? null;
 const todaysPokemonData = JSON.parse(localStorage.getItem('todaysPokemon')) ?? null;
 const alreadyDrewToday = todaysPokemonData?.date === today;
+
+console.log(todaysPokemonData);
+console.log(today);
 
 let stack = 1;
 let monsterball = 6;
