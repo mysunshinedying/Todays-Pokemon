@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Todays-Pokemon/static/css/main.71b8bbcf.css",
-    "main.js": "/Todays-Pokemon/static/js/main.af107fd5.js",
+    "main.js": "/Todays-Pokemon/static/js/main.3539ae2b.js",
     "static/js/453.a20ef6ce.chunk.js": "/Todays-Pokemon/static/js/453.a20ef6ce.chunk.js",
     "index.html": "/Todays-Pokemon/index.html",
     "main.71b8bbcf.css.map": "/Todays-Pokemon/static/css/main.71b8bbcf.css.map",
-    "main.af107fd5.js.map": "/Todays-Pokemon/static/js/main.af107fd5.js.map",
+    "main.3539ae2b.js.map": "/Todays-Pokemon/static/js/main.3539ae2b.js.map",
     "453.a20ef6ce.chunk.js.map": "/Todays-Pokemon/static/js/453.a20ef6ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71b8bbcf.css",
-    "static/js/main.af107fd5.js"
+    "static/js/main.3539ae2b.js"
   ]
 }
