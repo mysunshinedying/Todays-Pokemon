@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Todays-Pokemon/build/static/css/main.71b8bbcf.css",
-    "main.js": "/Todays-Pokemon/build/static/js/main.f669f15e.js",
-    "static/js/453.a20ef6ce.chunk.js": "/Todays-Pokemon/build/static/js/453.a20ef6ce.chunk.js",
-    "index.html": "/Todays-Pokemon/build/index.html",
-    "main.71b8bbcf.css.map": "/Todays-Pokemon/build/static/css/main.71b8bbcf.css.map",
-    "main.f669f15e.js.map": "/Todays-Pokemon/build/static/js/main.f669f15e.js.map",
-    "453.a20ef6ce.chunk.js.map": "/Todays-Pokemon/build/static/js/453.a20ef6ce.chunk.js.map"
+    "main.css": "/Todays-Pokemon/static/css/main.71b8bbcf.css",
+    "main.js": "/Todays-Pokemon/static/js/main.af107fd5.js",
+    "static/js/453.a20ef6ce.chunk.js": "/Todays-Pokemon/static/js/453.a20ef6ce.chunk.js",
+    "index.html": "/Todays-Pokemon/index.html",
+    "main.71b8bbcf.css.map": "/Todays-Pokemon/static/css/main.71b8bbcf.css.map",
+    "main.af107fd5.js.map": "/Todays-Pokemon/static/js/main.af107fd5.js.map",
+    "453.a20ef6ce.chunk.js.map": "/Todays-Pokemon/static/js/453.a20ef6ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.71b8bbcf.css",
-    "static/js/main.f669f15e.js"
+    "static/js/main.af107fd5.js"
   ]
 }
