@@ -36,7 +36,7 @@ const fetchPokemon = (pokemonNo, pokemonPersonal) => {
                 pokeHeight: (pokemonData.height / 10).toFixed(1),
                 pokeWeight: pokemonData.weight / 10,
                 pokeDescription: flavorKo ? flavorKo.flavor_text : '등록되지 않음',
-                pokePersonal: pokemonPersonal,
+                pokemonPersonal: pokemonPersonal,
                 pokeTypes: typeNames
             };
         });

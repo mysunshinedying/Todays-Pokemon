@@ -10,7 +10,7 @@ const PokemonDetail = (props) => {
             <p>도감 번호: {props.pokemon.pokemonNo}</p>
             <p>키: {props.pokemon.pokeHeight}m</p>
             <p>체중: {props.pokemon.pokeWeight}kg</p>
-            <p>성격: {props.pokemon.pokePersonal}</p>
+            <p>성격: {props.pokemon.pokemonPersonal}</p>
             <TypeBadge pokeTypes={props.pokemon.pokeTypes}/>
             <div>
                 {props.pokemon.pokeDescription}
